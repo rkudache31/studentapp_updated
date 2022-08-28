@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: student-back
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: student-back
+  template:
+    metadata:
+      labels:
+        app: student-back
+    spec:
+      nodeSelector:
+        "kubernetes.io/os": linux
+      containers:
+      - name: student-back
+        image: acrtest31.azurecr.io/student:latest
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 250m
+            memory: 256Mi
+        ports:
+        - containerPort: 3000
+          name: redis
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: student-back-svc
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 3000
+  selector:
+    app: student-back
+
