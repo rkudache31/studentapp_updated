@@ -1,0 +1,76 @@
+{
+  "student": [
+    {
+      "name": "Prashant",
+      "dateofbirth": "2000-01-11",
+      "gender": "Male",
+      "address": "fdf",
+      "mobileno": "7894561230",
+      "id": 1
+    },
+    {
+      "name": "Sham",
+      "dateofbirth": "2000-12-12",
+      "gender": "Male",
+      "address": "Near Alate",
+      "mobileno": "1234567890",
+      "id": 2
+    },
+    {
+      "name": "Sourabh Hawale",
+      "dateofbirth": "1999-11-11",
+      "gender": "Male",
+      "address": "Near Alate",
+      "mobileno": "9021209108",
+      "id": 3
+    },
+    {
+      "name": "Pooja Patil",
+      "dateofbirth": "1998-01-12",
+      "gender": "Female",
+      "address": "Kolhapur",
+      "mobileno": "7845123690",
+      "id": 4
+    },
+    {
+      "name": "ss",
+      "dateofbirth": "1989-11-11",
+      "gender": "Male",
+      "address": "s",
+      "mobileno": "1234567890",
+      "id": 5
+    },
+    {
+      "name": "dsfds",
+      "dateofbirth": "3444-04-10",
+      "gender": "Male",
+      "address": "rerrtert",
+      "mobileno": "1478529630",
+      "id": 6
+    },
+    {
+      "name": "dsfds",
+      "dateofbirth": "3444-04-10",
+      "gender": "Male",
+      "address": "rerrtert",
+      "mobileno": "1478529630",
+      "id": 7
+    },
+    {
+      "name": "dsfds",
+      "dateofbirth": "3444-04-10",
+      "gender": "Male",
+      "address": "rerrtert",
+      "mobileno": "1478529630",
+      "id": 8
+    },
+    {
+      "name": "dsfds",
+      "dateofbirth": "3444-04-10",
+      "gender": "Male",
+      "address": "rerrtert",
+      "mobileno": "1478529630",
+      "id": 9
+    }
+  ]
+}
