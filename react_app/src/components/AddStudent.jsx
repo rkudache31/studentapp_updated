@@ -26,7 +26,7 @@ export default class AddStudent extends Component {
       address: this.state.sAdddress,
       mobileno: this.state.sMobileNo,
     };
-    const res = await axios.post("http://localhost:3000/student", data);
+    const res = await axios.post("http://student-back-svc:3000/student", data);
     console.log(res);
     window.location.href = "/showstudent";
   };

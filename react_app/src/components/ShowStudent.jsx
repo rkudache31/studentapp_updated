@@ -6,7 +6,7 @@ export default function ShowStudent() {
   }, []);
 
   const getData = async()=>{
-    let result = await fetch('http://localhost:3000/student',{
+    let result = await fetch('http://student-back-svc:3000/student',{
       method:"GET"
     });
     result = await result.json();

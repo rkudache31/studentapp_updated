@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: student-back
+  name: student-back-react
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: student-back
+      app: student-back-react
   template:
     metadata:
       labels:
-        app: student-back
+        app: student-back-react
     spec:
       nodeSelector:
         "kubernetes.io/os": linux
       containers:
-      - name: student-back
-        image: acrtest31.azurecr.io/student:latest
+      - name: student-back-react
+        image: acrtest31.azurecr.io/student_react:latest
         resources:
           requests:
             cpu: 100m
@@ -25,18 +25,18 @@ spec:
             cpu: 250m
             memory: 256Mi
         ports:
-        - containerPort: 3000
+        - containerPort: 80
           name: redis
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: student-back-svc
+  name: student-back-react-svc
 spec:
   type: ClusterIP
   ports:
-  - port: 3000
-    targetPort: 3000
+  - port: 80
+    targetPort: 80
   selector:
-    app: student-back
+    app: student-back-react
 
